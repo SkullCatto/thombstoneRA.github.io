@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Memento Mori RA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+
+    <a-scene embedded arjs='sourceType: webcam;'>
+          
+              <a-entity gltf-model="thombstone.glb" scale="3 3 3" position="0 0 0" rotation="-90 0 0"></a-entity>
+              <a-plane position="0 0 0" rotation="-90 0 0" width="1" height="1" color="#7BC8A4"></a-plane>
+        <a-marker-camera preset="hiro"></a-marker-camera>
+          <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
